@@ -1,3 +1,4 @@
 .env
 __pycache__
 seed_data.json
+seed_prev.py
