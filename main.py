@@ -14,7 +14,8 @@ from database import database, engine, metadata
 from models import profiles
 from schemas import ProfileRequest
 from nlp import parse_query
-import uuid
+# import uuid
+from uuid_utils import uuid7
 # from uuid6 import uuid7
 
 
@@ -184,7 +185,7 @@ async def create_profile(payload: ProfileRequest):
     cid     = top["country_id"]
 
     data = {
-        "id":                  str(uuid.uuid7()),
+        "id":                  str(uuid7()),
         "name":                name,
         "gender":              genderize["gender"],
         "gender_probability":  genderize["probability"],
