@@ -9,6 +9,6 @@ backend_server.err.log
 web_server.out.log
 web_server.err.log
 
-# Testing Deployment
+
 backend/
 web/
